@@ -1,4 +1,4 @@
-import java.sql.Date
+import java.util.Date
 
 /**
   * 1, Scala中定义在object中的变量，方法都是静态的,object相当于java中的单例对象，object, Trait不能传参，
@@ -48,7 +48,7 @@ class Person(xname:String, xage:Int){
   def showLog(date:Date,log:String)={
     println(date + log)
   }
-  // val date = new Date()  // 调用java
+  val date = new Date()  // 调用java
   showLog(date,"aaa")
   showLog(date,"bbb")
   val fun1 = showLog(date:Date,_:String)  //  偏函数，变化的参数用下划线表示

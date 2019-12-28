@@ -1,6 +1,6 @@
 package lesson_base
 
-import java.sql.Date
+import java.util.Date
 
 /**
   * 1, Scala中定义在object中的变量，方法都是静态的,object相当于java中的单例对象，object, Trait不能传参，
