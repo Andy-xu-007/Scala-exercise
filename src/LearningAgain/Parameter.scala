@@ -23,5 +23,12 @@ object Parameter {
     val str = "Scala is scalable language"
     pattern findAllIn str foreach println
 
+    val arr = Array(1,7,6,4,5,3,9,4)
+    // arr.par  已经被取消了
+    val f2 = new Function2[Int, Double, (Double, Int)] {
+      def apply(v1: Int, v2: Double): (Double, Int) = {
+        (v2, v1)
+      }
+    }
   }
 }
